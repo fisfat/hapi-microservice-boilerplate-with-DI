@@ -1,6 +1,6 @@
 {
   "name": "microservice-template",
-  "version": "1.0.0",
+  "version": "0.2",
   "description": "Package template for dealer bLock with Hapi",
   "main": "bin/index.js",
   "scripts": {
