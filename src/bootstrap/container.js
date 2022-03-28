@@ -68,4 +68,14 @@ container.loadModules(
   },
 );
 
+// load logic
+container.loadModules(
+  ['../logics/*.js'],
+  {
+    cwd: __dirname,
+    formatName: formatNameWithGroup('Logic')
+  },
+)
+
+
 module.exports = container;

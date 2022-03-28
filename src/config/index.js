@@ -1,6 +1,6 @@
 const env = process.env.NODE_ENV || 'dev';
 const name = process.env.NAME || 'fisfat-microservice-boilerplate';
-const version = process.env.VERSION || 1.0;
+const version = process.env.VERSION || 0.2;
 
 module.exports = {
   env,
