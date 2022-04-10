@@ -8,17 +8,17 @@ module.exports = {
     url: process.env.REDIS_URL || '',
   },
   mongodb: {
-    url: process.env.MONGODB_URL || '',
+    url: process.env.MONGODB_URL || 'http://localhost:27017',
     reconnectTries: Number.MAX_VALUE,
     poolSize: 10,
   },
   server: {
     port: +(process.env.SERVER_PORT || process.env.PORT || 8080),
     keepAliveTimeout: +(process.env.SERVER_KEEP_ALIVE_TIMEOUT || 120000),
-    returnValidationInfoError: (process.env.SERVER_RETURN_VALIDATION_INFO_ERROR || 'false').trim().toLowerCase() === 'true',
+    returnValidationInfoError: (process.env.SERVER_RETURN_VALIDATION_INFO_ERROR || 'true').trim().toLowerCase() === 'true',
   },
   swagger: {
-    enabled: (process.env.SWAGGER_ENABLED || 'false').trim().toLowerCase() === 'true',
+    enabled: (process.env.SWAGGER_ENABLED || 'true').trim().toLowerCase() === 'true',
   },
   log: {
     name,
