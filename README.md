@@ -1,2 +1,2 @@
-# fisfat-hapi-microservice-boilerplate
-This is my custom made hapi microservice boilerplate
+# hapi-microservice-boilerplate
+custom-made hapi microservice boilerplate with dependency injection
